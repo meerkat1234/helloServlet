@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
 		//read form data
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		String htmlResponse ="<html>";
-		htmlResponse += "<h2> your name is " + username + "<br/>";
+		htmlResponse += "<h2> your username is " + username + "<br/>";
 		htmlResponse += " your password is " + password + "<h2/>";
 		htmlResponse += "</html>";
 		
